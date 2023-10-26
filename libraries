@@ -1,0 +1,12 @@
+pip install pyaudio
+pip install matplotlib
+
+pip install pyttsx3
+pip install speechrecognition
+pip install -U scikit-learn
+%pip install vosk
+%pip install pydub
+%pip install transformers
+%pip install torch -f https://download.pytorch.org/whl/torch_stable.htm
+%pip install ipywidgets
+pip install pandas
