@@ -1,5 +1,10 @@
 import pandas as pd
+import pyttsx3
 from sklearn.model_selection import train_test_split
+import random
+import string
+import speech_recognition as sr
+import matplotlib.pyplot as plt
 
 # Load the dataset
 data = pd.read_csv('newdata1.csv', encoding='utf-8')
@@ -10,8 +15,6 @@ train_data, test_data = train_test_split(data, test_size=0.2, random_state=42)
 # Save the training and testing data to CSV files
 train_data.to_csv('train_data.csv', index=False)
 test_data.to_csv('test_data.csv', index=False)
-
-import pyttsx3
 
 # Load the CSV file into a Pandas DataFrame
 df = pd.read_csv('train_data.csv', encoding='utf-8')
@@ -116,11 +119,7 @@ while(1):
     except sr.UnknownValueError:
         print("Unknown error occurred")
 
-import pandas as pd
-import random
-import string
-import speech_recognition as sr
-import matplotlib.pyplot as plt
+
 
 test_data = pd.read_csv('test_data.csv')
 
